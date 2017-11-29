@@ -1,4 +1,4 @@
-package other.tcalss;
+package other.tclass;
 
 public class TestDemo2 {
 
