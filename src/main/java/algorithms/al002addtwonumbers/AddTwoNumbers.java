@@ -1,4 +1,4 @@
-package algorithms.addtwonumbers;
+package algorithms.al002addtwonumbers;
 
 
 /**

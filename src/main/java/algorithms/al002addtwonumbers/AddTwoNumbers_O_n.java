@@ -1,4 +1,4 @@
-package algorithms.addtwonumbers;
+package algorithms.al002addtwonumbers;
 
 /**
  * Created by CISCO : jonzhou on 2017/10/31.
