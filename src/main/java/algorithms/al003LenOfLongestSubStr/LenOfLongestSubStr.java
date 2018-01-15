@@ -1,4 +1,4 @@
-package algorithms.al003lenOfLongestSubStr;
+package algorithms.al003LenOfLongestSubStr;
 
 import java.util.ArrayList;
 import java.util.List;

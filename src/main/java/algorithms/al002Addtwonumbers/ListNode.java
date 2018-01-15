@@ -1,4 +1,4 @@
-package algorithms.al002addtwonumbers;
+package algorithms.al002Addtwonumbers;
 
 public class ListNode {
 

@@ -1,4 +1,4 @@
-package algorithms.al001twosum;
+package algorithms.al001Twosum;
 
 import java.util.HashMap;
 import java.util.Map;

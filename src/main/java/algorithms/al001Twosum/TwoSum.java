@@ -1,4 +1,4 @@
-package algorithms.al001twosum;
+package algorithms.al001Twosum;
 
 /**
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
