@@ -1,10 +1,5 @@
 package algorithms.al002Addtwonumbers;
 
-/**
- * Created by CISCO : jonzhou on 2017/10/31.
- * <p>
- * The usage of this class is ...
- */
 public class AddTwoNumbers_O_n {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
