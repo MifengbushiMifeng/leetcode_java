@@ -4,6 +4,9 @@ import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
+/**
+ * Refer URL : https://juejin.im/post/5a3267a66fb9a045132ab988
+ */
 public class Horse implements Runnable {
 
     private static int counter = 0;
@@ -27,8 +30,8 @@ public class Horse implements Runnable {
     @Override
     public void run() {
 
-        while (!Thread.interrupted()){
-            synchronized (this){
+        while (!Thread.interrupted()) {
+            synchronized (this) {
                 strides += rand.nextInt(3);
             }
             try {
