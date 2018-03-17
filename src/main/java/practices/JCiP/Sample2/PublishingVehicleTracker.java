@@ -1,5 +1,7 @@
 package practices.JCiP.Sample2;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -30,5 +32,11 @@ public class PublishingVehicleTracker {
             throw new IllegalArgumentException("invalid vehicle name: " + id);
         }
         locations.get(id).set(x, y);
+    }
+
+    public static void main(String[] args) {
+        final int[] arr = {1, 2, 3};
+        Array.set(arr, 2, 11);
+        System.out.println(Arrays.toString(arr));
     }
 }
