@@ -3,19 +3,25 @@ package practices.DynaProxy;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
 public class AOPTest {
 
-    @Before("execution(* practices.DynaProxy.*.*(..))")
+    @Pointcut("execution(* practices.DynaProxy.*.*(..))")
+    public void pt() {
+
+    }
+
+    @Before("pt()")
     public void begin() {
         System.out.println("Transaction begin");
 
     }
 
-    @After("execution(* practices.DynaProxy.*.*(..))")
+    @After("pt()")
     public void after() {
         System.out.println("Close Transaction");
     }
