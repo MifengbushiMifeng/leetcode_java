@@ -1,4 +1,4 @@
-package practices.DynaProxy;
+package practices.dynaProxy;
 
 public class TestApp {
 

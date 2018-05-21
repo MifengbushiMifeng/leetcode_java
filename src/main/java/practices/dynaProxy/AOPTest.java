@@ -1,4 +1,4 @@
-package practices.DynaProxy;
+package practices.dynaProxy;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AOPTest {
 
-    @Pointcut("execution(* practices.DynaProxy.*.*(..))")
+    @Pointcut("execution(* practices.dynaProxy.*.*(..))")
     public void pt() {
 
     }

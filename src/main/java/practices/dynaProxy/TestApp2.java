@@ -1,4 +1,4 @@
-package practices.DynaProxy;
+package practices.dynaProxy;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

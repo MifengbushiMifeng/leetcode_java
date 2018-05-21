@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-    <context:component-scan base-package="practices.DynaProxy"/>
+    <context:component-scan base-package="practices.dynaProxy"/>
 
     <!-- 开启aop注解方式 -->
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
