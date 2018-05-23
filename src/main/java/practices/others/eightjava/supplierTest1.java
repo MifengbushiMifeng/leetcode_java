@@ -11,7 +11,11 @@ import java.util.function.Supplier;
 public class supplierTest1 {
 
 
-    public static void main(String[] args) {
+    public static final String ABCD = "abcd";
+    public static final String ABC = "abc";
+
+    public static void main1(String[] args) {
+
         // new operator itself is a supplier, of the reference to the newly created object
         Supplier<List<String>> listSupplier = ArrayList::new;
         Consumer<String> printConsumer = System.out::println;
@@ -19,8 +23,9 @@ public class supplierTest1 {
 
         Consumer<String> stringConsumer = (s) -> System.out.println(s.length());
 
-        Arrays.asList("ab", "abc", "a", "abcd").forEach(stringConsumer);
-        Arrays.asList("ab", "abc", "a", "abcd").forEach(printConsumer);
+        String a = "a";
+        Arrays.asList("ab", ABC, a, ABCD).forEach(stringConsumer);
+        Arrays.asList("ab", "abc", a, "abcd").forEach(printConsumer);
         List<String> aStrArr = listSupplier.get();
         aStrArr.add("abc-xyz");
         aStrArr.forEach(printConsumer);
@@ -38,10 +43,23 @@ public class supplierTest1 {
 
         };
 
-        System.out.println("---------------------");
+        printWrapper();
 
         List<String> list = listSupplier1.get();
         list.forEach(printConsumer);
     }
 
+    private static void printWrapper() {
+        System.out.println("---------------------");
+    }
+
+
+    public static void main(String[] args) {
+
+        int x = 2 << 7 - 2 * 3;
+        System.out.println(x);
+        int y = 2 << 7;
+        System.out.println(y);
+
+    }
 }
